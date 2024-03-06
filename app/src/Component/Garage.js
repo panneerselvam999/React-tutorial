@@ -5,6 +5,13 @@ import Apple from "./Apple";
 // const bmw = "BMW"
 const CarInfo = { brand: "BMW", color: "Red" }
 // const CarInfo = {}
+const carList = [
+    { brand: "Tesla", color: "black" },
+    { brand: "Audi", color: "White" },
+    { brand: "WW", color: "Red" },
+    { brand: "BMW", color: "Green" }
+]
+
 const CarInfoVal = CarInfo.brand !== undefined && CarInfo.color !== undefined
 const AppleInfo = { type: "Mobile", color: "Silver" }
 const door = false;
@@ -12,11 +19,14 @@ function Garage() {
     return (
         <div>
             <h1>This is Garage Component</h1>
-            {CarInfoVal ? <Car CarInfoBMW={CarInfo} /> : null}
+            {CarInfoVal ? <Car CarInfo={CarInfo} /> : null}
             <Apple AInfo={AppleInfo} />
             {door ? <p>Door is Open</p> : <p>Door is Close</p>}
+            <ul>
+                {carList.map((obj) => < li > <Car CarInfo={obj} /> </li>)}
+            </ul>
 
-        </div>
+        </div >
     )
 }
 export default Garage;
