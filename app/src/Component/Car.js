@@ -1,7 +1,8 @@
 
 
 function Car(props) {
-    const { brand, color } = props
+    const { CarInfo } = props
+    const { brand, color } = CarInfo
 
     return (
         <div>
