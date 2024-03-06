@@ -4,16 +4,18 @@ import App from './App';
 
 //custom components
 // import Car from "./Component/Car.js";
-import Garage from './Component/Garage.js';
+// import Garage from './Component/Garage.js';
 // import Apple from './Component/Apple.js';
+import Header from './Component/Header';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    {/* <App /> */}
     {/* <Car /> */}
-    <Garage />
+    {/* <Garage /> */}
     {/* <Apple /> */}
+    <Header />
   </React.StrictMode>
 );
 
