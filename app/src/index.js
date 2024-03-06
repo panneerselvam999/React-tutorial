@@ -3,17 +3,17 @@ import ReactDOM from 'react-dom/client';
 import App from './App';
 
 //custom components
-import Car from "./Component/Car.js";
+// import Car from "./Component/Car.js";
 import Garage from './Component/Garage.js';
-import Apple from './Component/Apple.js';
+// import Apple from './Component/Apple.js';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <App />
-    <Car />
+    {/* <Car /> */}
     <Garage />
-    <Apple />
+    {/* <Apple /> */}
   </React.StrictMode>
 );
 

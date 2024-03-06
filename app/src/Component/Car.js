@@ -1,7 +1,11 @@
-function Car() {
+
+
+function Car(props) {
+    const { brand, color } = props
+
     return (
         <div>
-            <h1>Car Component</h1>
+            <h3>Car brand is {brand} color is {color}</h3>
         </div>
     )
 }
