@@ -3,15 +3,16 @@ import Apple from "./Apple";
 
 
 // const bmw = "BMW"
-const CarInfo = { brand: "BMW", color: "Red" }
+// const CarInfo = { brand: "BMW", color: "Red" }
+const CarInfo = {}
 const AppleInfo = { type: "Mobile", color: "Silver" }
 
 function Garage() {
     return (
         <div>
             <h1>This is Garage Component</h1>
-            {/* <Car brand={bmw} color="Black" /> */}
-            <Car CarInfoBMW={CarInfo} />
+            {CarInfo.brand !== undefined && CarInfo.color !== undefined ?
+                <Car CarInfoBMW={CarInfo} /> : null}
             <Apple AInfo={AppleInfo} />
         </div>
     )
