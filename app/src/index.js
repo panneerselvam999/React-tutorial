@@ -8,6 +8,7 @@ import App from './App';
 // import Apple from './Component/Apple.js';
 // import Header from './Component/Header';
 import FavoriteColor from './Component/FavoriteColor';
+import Fcc from './Component/FavoriteColorClass';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -18,6 +19,7 @@ root.render(
     {/* <Header /> */}
     <App />
     <FavoriteColor />
+    <Fcc />
   </React.StrictMode>
 );
 
