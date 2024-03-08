@@ -6,16 +6,18 @@ import App from './App';
 // import Car from "./Component/Car.js";
 // import Garage from './Component/Garage.js';
 // import Apple from './Component/Apple.js';
-import Header from './Component/Header';
+// import Header from './Component/Header';
+import FavoriteColor from './Component/FavoriteColor';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    {/* <App /> */}
     {/* <Car /> */}
     {/* <Garage /> */}
     {/* <Apple /> */}
-    <Header />
+    {/* <Header /> */}
+    <App />
+    <FavoriteColor />
   </React.StrictMode>
 );
 
