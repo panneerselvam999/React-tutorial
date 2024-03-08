@@ -1,13 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import App from './App';
+// import App from './App';
 
 //custom components
 // import Car from "./Component/Car.js";
 // import Garage from './Component/Garage.js';
 // import Apple from './Component/Apple.js';
 // import Header from './Component/Header';
-import FavoriteColor from './Component/FavoriteColor';
+// import FavoriteColor from './Component/FavoriteColor';
 import Fcc from './Component/FavoriteColorClass';
 import Scooter from './Component/Scooter';
 
@@ -18,8 +18,8 @@ root.render(
     {/* <Garage /> */}
     {/* <Apple /> */}
     {/* <Header /> */}
-    <App />
-    <FavoriteColor />
+    {/* <App /> */}
+    {/* <FavoriteColor /> */}
     <Fcc />
     <Scooter />
   </React.StrictMode>
