@@ -9,6 +9,7 @@ import App from './App';
 // import Header from './Component/Header';
 import FavoriteColor from './Component/FavoriteColor';
 import Fcc from './Component/FavoriteColorClass';
+import Scooter from './Component/Scooter';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -20,6 +21,7 @@ root.render(
     <App />
     <FavoriteColor />
     <Fcc />
+    <Scooter />
   </React.StrictMode>
 );
 
