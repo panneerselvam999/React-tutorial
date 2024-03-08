@@ -1,11 +1,6 @@
 import { useState } from "react"
 
 function Scooter() {
-    // const [color, setColor] = useState("Green")
-    // const [brand, setBrand] = useState("Honda")
-    // const [model, setModel] = useState("Activa 6G")
-    // const [year, setYear] = useState("2024")
-
     const [scooter, setScooter] = useState(
         {
             color: "Green",
@@ -15,18 +10,22 @@ function Scooter() {
         }
     )
 
+    function change() {
+        // setScooter({ color: "black" })
+        setScooter((perviosVal) => {
+            return { ...perviosVal, color: "yellow" }
+        })
+    }
+    console.log(scooter);
 
     return (
         <>
             <h3>Scooter</h3>
-            {/* <p>Color {color}</p>
-            <p>Brand {brand}</p>
-            <p>model {model}</p>
-            <p>Year {year}</p> */}
-            <p>Color {scooter.color}</p>
-            <p>Brand {scooter.brand}</p>
-            <p>model {scooter.model}</p>
-            <p>Year {scooter.year}</p>
+            <p>Color: {scooter.color}</p>
+            <p>Brand: {scooter.brand}</p>
+            <p>model: {scooter.model}</p>
+            <p>Year : {scooter.year}</p>
+            <button onClick={change}>Change Scooter</button>
         </>
 
     )
