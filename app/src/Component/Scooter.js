@@ -16,7 +16,7 @@ function Scooter() {
             return { ...perviosVal, color: "yellow" }
         })
     }
-    console.log(scooter);
+    // console.log(scooter);
 
     return (
         <>

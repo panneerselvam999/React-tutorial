@@ -10,10 +10,12 @@ import ReactDOM from 'react-dom/client';
 // import FavoriteColor from './Component/FavoriteColor';
 import Fcc from './Component/FavoriteColorClass';
 import Scooter from './Component/Scooter';
+import List from './Component/list';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
+  // <React.StrictMode>
+  <>
     {/* <Car /> */}
     {/* <Garage /> */}
     {/* <Apple /> */}
@@ -22,7 +24,9 @@ root.render(
     {/* <FavoriteColor /> */}
     <Fcc />
     <Scooter />
-  </React.StrictMode>
+    <List />
+  </>
+  //</React.StrictMode>
 );
 
 // If you want to start measuring performance in your app, pass a function
