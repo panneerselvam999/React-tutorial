@@ -6,9 +6,10 @@ function Timer() {
     useEffect(() => {
         console.log("Render Screen");
         checkCount();
-    }, [count])
-
-
+        setTimeout(() => {
+            setCount((pre) => { return pre + 1 })
+        }, 500);
+    })
 
     function checkCount() {
         if (count > 10) {
@@ -27,3 +28,4 @@ function Timer() {
     )
 }
 export default Timer
+
