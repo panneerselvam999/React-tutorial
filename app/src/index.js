@@ -8,9 +8,10 @@ import ReactDOM from 'react-dom/client';
 // import Apple from './Component/Apple.js';
 // import Header from './Component/Header';
 // import FavoriteColor from './Component/FavoriteColor';
-import Fcc from './Component/FavoriteColorClass';
-import Scooter from './Component/Scooter';
-import List from './Component/list';
+// import Fcc from './Component/FavoriteColorClass';
+// import Scooter from './Component/Scooter';
+// import List from './Component/list';
+import Timer from './Component/Timer';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -22,9 +23,10 @@ root.render(
     {/* <Header /> */}
     {/* <App /> */}
     {/* <FavoriteColor /> */}
-    <Fcc />
-    <Scooter />
-    <List />
+    {/* <Fcc /> */}
+    {/* <Scooter /> */}
+    {/* <List /> */}
+    <Timer />
   </>
   //</React.StrictMode>
 );
