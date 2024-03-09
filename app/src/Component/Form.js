@@ -19,11 +19,44 @@ function Form() {
         <>
             <form onSubmit={handleSubmit}>
 
-                <label>Name: <input type="text" onChange={(e) => { setInput(e.target.value) }} /></label> <br />
+                <label>Name: <input type="text" onChange={
+                    (e) => {
+                        setInput(
+                            (pre) => {
+                                return { ...pre, name: e.target.value }
+                            }
+                        )
+                    }
+                } /></label> <br />
 
-                <label>Age: <input type="text" onChange={(e) => { setInput(e.target.value) }} /></label> <br />
+                <label>Age: <input type="text" onChange={
+                    (e) => {
+                        setInput(
+                            (pre) => {
+                                return { ...pre, age: e.target.value }
+                            }
+                        )
+                    }
+                } /></label> <br />
 
-                <label>Email: <input type="email" onChange={(e) => { setInput(e.target.value) }} /></label> <br />
+                <label>Email: <input type="email" onChange={
+                    (e) => {
+                        setInput(
+                            (pre) => {
+                                return { ...pre, email: e.target.value }
+                            }
+                        )
+                    }
+                } /></label> <br />
+
+
+
+
+                {/* <label>Name: <input type="text" onChange={(e) => { setInput({ name: e.target.value }) }} /></label> <br />
+
+                <label>Age: <input type="text" onChange={(e) => { setInput({ age: e.target.value }) }} /></label> <br />
+
+                <label>Email: <input type="email" onChange={(e) => { setInput({ email: e.target.value }) }} /></label> <br /> */}
 
 
                 {/* <label>Name: <input type="text" onChange={(e) => { setName(e.target.value) }} /></label> <br />
