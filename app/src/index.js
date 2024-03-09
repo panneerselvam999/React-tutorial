@@ -11,22 +11,24 @@ import ReactDOM from 'react-dom/client';
 // import Fcc from './Component/FavoriteColorClass';
 // import Scooter from './Component/Scooter';
 // import List from './Component/list';
-import Timer from './Component/Timer';
+// import Timer from './Component/Timer';
+import Form from './Component/Form';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   // <React.StrictMode>
   <>
+    {/* <App /> */}
     {/* <Car /> */}
     {/* <Garage /> */}
     {/* <Apple /> */}
     {/* <Header /> */}
-    {/* <App /> */}
     {/* <FavoriteColor /> */}
     {/* <Fcc /> */}
     {/* <Scooter /> */}
     {/* <List /> */}
-    <Timer />
+    {/* <Timer /> */}
+    <Form />
   </>
   //</React.StrictMode>
 );
