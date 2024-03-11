@@ -4,6 +4,8 @@ import Home from "./Route/Home.js"
 import About from "./Route/About.js"
 import Contact from "./Route/Contact.js"
 import User from "./Route/User.js";
+import OldBooks from "./Route/OldBooks.js";
+import NewBooks from "./Route/NewBooks.js";
 
 
 
@@ -19,12 +21,27 @@ function App() {
           <li><Link to="/user/2">  User</Link></li>
           <li><Link to="/user/3">  User</Link></li>
           <li><Link to="/user/4">  User</Link></li>
+
+
+          {/* <li><Link to="/b-type/oldbooks">  Old Books</Link></li>
+          <li><Link to="/b-type/newbooks">  New Books</Link></li> */}
+          <li><Link to="/books/oldbooks">  Old Books</Link></li>
+          <li><Link to="/books/newbooks">  New Books</Link></li>
+
+
         </ul>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/user/:id" element={<User />} />
+
+          {/* <Route path="/b-type"> */}
+          <Route path="/books">
+            <Route path="oldbooks" element={<OldBooks />}>  </Route>
+            <Route path="newbooks" element={<NewBooks />}>  </Route>
+          </Route>
+
         </Routes>
       </BrowserRouter>
     </div>
