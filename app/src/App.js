@@ -6,6 +6,8 @@ import Contact from "./Route/Contact.js"
 import User from "./Route/User.js";
 import OldBooks from "./Route/OldBooks.js";
 import NewBooks from "./Route/NewBooks.js";
+import Login from "./Route/Login.js";
+import DashBoard from "./Route/DashBoard.js";
 
 
 
@@ -28,6 +30,8 @@ function App() {
           <li><Link to="/books/oldbooks">  Old Books</Link></li>
           <li><Link to="/books/newbooks">  New Books</Link></li>
 
+          <li><Link to="/login">  Login</Link></li>
+
 
         </ul>
         <Routes>
@@ -41,6 +45,9 @@ function App() {
             <Route path="oldbooks" element={<OldBooks />}>  </Route>
             <Route path="newbooks" element={<NewBooks />}>  </Route>
           </Route>
+
+          <Route path="/login" element={<Login />} />
+          <Route path="/dashboard" element={<DashBoard />} />
 
         </Routes>
       </BrowserRouter>
