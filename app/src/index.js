@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-// import App from './App';
+import App from './App';
 
 //custom components
 // import Car from "./Component/Car.js";
@@ -12,13 +12,13 @@ import ReactDOM from 'react-dom/client';
 // import Scooter from './Component/Scooter';
 // import List from './Component/list';
 // import Timer from './Component/Timer';
-import Form from './Component/Form';
+// import Form from './Component/Form';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   // <React.StrictMode>
   <>
-    {/* <App /> */}
+    <App />
     {/* <Car /> */}
     {/* <Garage /> */}
     {/* <Apple /> */}
@@ -28,7 +28,7 @@ root.render(
     {/* <Scooter /> */}
     {/* <List /> */}
     {/* <Timer /> */}
-    <Form />
+    {/* <Form /> */}
   </>
   //</React.StrictMode>
 );
